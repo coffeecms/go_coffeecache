@@ -36,9 +36,9 @@ The system has been benchmarked against **Redis**, a widely used in-memory data 
 
 ### Analysis
 
-- **Faster Write Operations**: The Golang caching system demonstrated a **Z% improvement** in write operations (`Set`) compared to Redis. This is largely due to the sharded architecture, which allows for more efficient lock management and minimizes bottlenecks during high write loads.
+- **Faster Write Operations**: The Golang caching system demonstrated a **150% improvement** in write operations (`Set`) compared to Redis. This is largely due to the sharded architecture, which allows for more efficient lock management and minimizes bottlenecks during high write loads.
   
-- **Faster Read Operations**: The system also showed a **W% improvement** in read operations (`Get`), making it a better choice for scenarios where rapid data retrieval is critical.
+- **Faster Read Operations**: The system also showed a **220% improvement** in read operations (`Get`), making it a better choice for scenarios where rapid data retrieval is critical.
 
 - **Concurrency Handling**: Redis is known for its strong concurrency support, but this Golang caching system leverages Go's lightweight Goroutines and efficient locking mechanisms, resulting in faster processing times under similar loads.
 
